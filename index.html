@@ -858,7 +858,6 @@ function GlobalStyle() {
       @media (min-width: 640px) { .cl-modal { border-radius: 20px; } }
       @media (max-width: 380px) {
         .cl-modal { padding: 12px 16px 18px; }
-        .cl-row2 { flex-direction: column; }
         .cl-set-input { width: 48px; }
       }
       .cl-modal-handle { width: 36px; height: 4px; border-radius: 999px; background: rgba(255,255,255,0.14); margin: 0 auto 16px; }
@@ -870,8 +869,8 @@ function GlobalStyle() {
       .cl-input, .cl-select, .cl-textarea { width: 100%; min-width: 0; background: rgba(255,255,255,0.04); border: 1px solid var(--surface-border); border-radius: 11px; padding: 11px 13px; color: var(--text); font-family: 'Inter', sans-serif; font-size: 14px; }
       .cl-input:focus, .cl-select:focus, .cl-textarea:focus { outline: 2px solid var(--accent); outline-offset: 1px; border-color: transparent; }
       .cl-textarea { resize: vertical; min-height: 70px; }
-      .cl-row2 { display: flex; gap: 10px; }
-      .cl-row2 > .cl-field { flex: 1 1 0; min-width: 0; }
+      .cl-row2 { display: flex; flex-direction: column; gap: 10px; }
+      .cl-row2 > .cl-field { min-width: 0; }
 
       .cl-chip-toggle { display: inline-flex; align-items: center; padding: 7px 13px; border-radius: 999px; border: 1px solid var(--surface-border); font-size: 12px; margin: 0 6px 6px 0; cursor: pointer; color: var(--text-dim); background: rgba(255,255,255,0.03); font-weight: 500; }
       .cl-chip-toggle.on { background: linear-gradient(135deg, var(--accent), var(--accent-2)); color: #0A0A0D; border-color: transparent; font-weight: 600; }
